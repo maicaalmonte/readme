@@ -29,7 +29,7 @@ pg_ctl reload -D "C:\Program Files\PostgreSQL\17\data"
 ALTER USER your_user_name WITH PASSWORD 'your_password';
 ```
 **if successful....**
-**4. test postgresql connection**
+<br>**4. test postgresql connection**
 ```cdm
 psql -U your_user_name -h 127.0.0.1 -d your_database_name
 ```
