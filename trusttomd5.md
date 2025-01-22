@@ -19,17 +19,17 @@ local   replication     all                                     md5
 host    replication     all             127.0.0.1/32            md5
 host    replication     all             ::1/
 ```
-**2. save and reload postgresql:
+**2. save and reload postgresql:**
 
 ```cmd
 pg_ctl reload -D "C:\Program Files\PostgreSQL\17\data"
 ```
-**3. ensure password is set for postgresql if ur using md5. to set a password:
+**3. ensure password is set for postgresql if ur using md5. to set a password:**
 ```sql
 ALTER USER your_user_name WITH PASSWORD 'your_password';
 ```
 **if successful....**
-**4. test postgresql connection**
+<br>**4. test postgresql connection**
 ```cdm
 psql -U your_user_name -h 127.0.0.1 -d your_database_name
 ```
