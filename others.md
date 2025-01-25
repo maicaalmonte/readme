@@ -11,3 +11,19 @@ notepad "C:\Program Files\PostgreSQL\<version>\data\pg_hba.conf"
 ```bash
     echo $env:PATH
 ````
+.check if postgresql is running:
+```cmd
+netstat -ano | findstr :5433
+```
+.connect directly usinf psql command-line tool:
+```bash
+psql -h localhost -p 5433 -U your_username -d your_database
+```
+.check postgresql status:
+```bash
+net start | findstr postgres
+```
+.test postgresql connection:
+```bash
+psql -h localhost -p 5433 -U your_username -d your_database
+```
