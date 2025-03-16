@@ -104,4 +104,3 @@ host    all             all             192.168.1.0/24          scram-sha-256
 host    all             all             0.0.0.0/0               md5
 ```
 
-
